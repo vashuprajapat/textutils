@@ -16,7 +16,7 @@ export default function Navbar(props) {
           <abbr className="nav-link active" aria-current="page" href="/">Home</abbr>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to={'/about'}>{props.aboutText}</Link>
+          {/* <Link className="nav-link" to={'/about'}>{props.aboutText}</Link> */}
           <a className="nav-link" href="/about">{props.aboutText}</a>
         </li>
       </ul>
