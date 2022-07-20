@@ -5,7 +5,7 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode.clr==='light'?'light':'dark'} bg-${props.mode.clr==='light'?'light':'dark'}`}>
   <div className="container-fluid">
-    <a className="navbar-brand" href={'/'}>{props.title}</a>
+    <a className="navbar-brand" href="#">{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -17,7 +17,7 @@ export default function Navbar(props) {
         </li>
         <li className="nav-item">
           {/* <Link className="nav-link" to={'/about'}>{props.aboutText}</Link> */}
-          <a className="nav-link" href="/about">{props.aboutText}</a>
+          <a className="nav-link" href="#">{props.aboutText}</a>
         </li>
       </ul>
       <button className={`btn btn-${props.mode.clr==='light'?'dark':'light'} my-2 mx-1`} onClick={props.switchToDark}>{props.mode.clr==='light'?'Dark':'Light'}</button>
